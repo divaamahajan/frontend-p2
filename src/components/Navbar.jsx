@@ -65,6 +65,16 @@ function Navbar({ user, onLogout }) {
           >
             Files
           </Link>
+          
+          <Link 
+            to="/voice-to-slide" 
+            style={{
+              ...styles.navLink,
+              ...(isActive('/voice-to-slide') ? styles.activeLink : {})
+            }}
+          >
+            Voice-to-Slide
+          </Link>
 
           {user && (
             <Link 
